@@ -1,0 +1,68 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Georgia Startup - Investor Interactive Map</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+ <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+ <script type="text/javascript" src="map.js"></script>
+ <script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/tags/markerclustererplus/2.0.12/src/markerclusterer_packed.js" />
+  <script type="text/javascript" src="http://www.ejw.de/typo3conf/ext/ejwintern/Resources/Public/JS/oms.min.js" />
+
+    <script type="text/javascript">
+      var action_st = 1;
+      var action_vc = 1;
+
+      function addStartup(){
+        if (action_st ==1){
+          startupMarkers();
+          action = 2;
+        } else {
+          clearST();
+          action = 1;
+        }
+
+      }
+
+      function addInvestor(){
+       if (action_vc ==1){
+          vcMarkers();
+          action = 2;
+        } else {
+          clearVC();
+          action = 1;
+        }
+      }
+    </script>
+  </head>
+  <body>
+
+    <div id="container" align="left">
+
+  <h1 align="left">Investor Map</h1>
+  
+    <div id="box">
+    <div align="right" style="float: right; "><input id="refresh" type="button" onClick="window.location.reload()" value="Refresh / Clear Map" /> </div><br /></div>
+    <div id="map-canvas" style="height:700px;"></div>
+
+    <div id="box">
+        <form action="#">
+      Startups: <input type="checkbox" id="startupbox" onclick="boxclick(this,'startups')" checked /> &nbsp;&nbsp;
+      Investors: <input type="checkbox" id="golfbox" onclick="boxclick(this,'investors')" /> &nbsp;&nbsp;
+        </form>
+
+        
+        <p><b>Usage Note</b>:<br />
+          Click on any marker to view company information. <br />
+          Double click on any start up marker to pin its investors listed on our database. <br />
+          <br /><br />
+      </div>
+
+  </div>
+  </body>
+</html>
+
