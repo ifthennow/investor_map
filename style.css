@@ -1,0 +1,100 @@
+body {
+    background: #f0f0f0;
+    }
+
+#container {
+background: white;
+width:auto;
+height:auto;
+margin:1% 2%;
+padding-top: 20px;
+
+/*border: 1px solid #dfdfdf;*/
+border-top: 0;
+
+box-shadow: 0 0 60px rgba(0,0,0,0.15);
+}
+
+
+h1 {
+margin-bottom: 0;
+margin-left: 30px;
+color: rgb(33, 117, 155);
+font: 32px/46px sans-serif;
+}
+h1 a {
+display: block;
+height: 0;
+padding-top: 73px;
+width: 220px;
+overflow: hidden;
+background: transparent;
+margin-left: 10px;
+margin-bottom: 8px;
+text-decoration: none;
+color: rgb(33, 117, 155);
+-webkit-transition: 0.8s all;
+
+/*-webkit-animation-duration: 2s;
+-webkit-animation-delay: 15s;
+-webkit-animation-name: autumn;
+-webkit-animation-iteration-count: 2;
+-webkit-animation-direction: alternate;*/
+}
+
+h3{
+  color: rgb(33, 117, 155);
+	font: 26px/32px sans-serif;
+}
+
+li {
+font-size: 1.4em;
+font: normal 22px/28px sans-serif;
+padding: 1px;
+background: #edeeef;
+border-right: 1px solid #ccc;
+border-bottom: 1px solid #ccc;
+color: white;
+background: linear-gradient(to top, rgb(55, 55, 55) 0px, rgb(70, 70, 70) 5px) repeat scroll 0% 0% rgb(70, 70, 70);
+text-transform: uppercase;
+text-shadow: 0 -1px 1px rgba(0,0,0,0.35);
+list-style-type: none;
+}
+
+#map-canvas:focus {
+border-color: #999;
+}
+
+#box {
+position: relative;
+margin: auto; 
+margin-top: 0px;
+margin-right:50px;
+margin-left: 10px;
+width: 95%; 
+clear:both;
+padding-left: 2%;
+	font: 14px/18px sans-serif;
+}
+  #map-canvas {
+        border: 1px solid #ccc;
+position: relative;
+width:95%;
+margin-top: 10px;
+margin-left: 30px;
+  }
+
+#infoWindow{
+    width:350px;
+
+}
+
+p{
+	text-align: left;
+	font: 16px/22px sans-serif;
+
+}
+
+input, form{
+	font: 22px/26px sans-serif;
+}
